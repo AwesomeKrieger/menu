@@ -2,40 +2,46 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Finde den Imposter</title>
-  <link rel="manifest" href="manifest.json" />
-  <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Jos Spiele</title>
+  <meta name="theme-color" content="#111111">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app">
-    <header class="topbar">
-      <div>
-        <h1>Jos Spiele</h1>
-        <div class="filters">
-          <button>👥 Spieleranzahl</button>
-          <button>❤️ Favoriten</button>
-        </div>
+
+<div class="app">
+
+  <header class="hero">
+    <div>
+      <p class="subtitle">Mobile Party Games</p>
+      <h1>Jos Spiele</h1>
+
+      <div class="chips">
+        <button>👥 Multiplayer</button>
+        <button>🔥 Beliebt</button>
+        <button>🎮 Party</button>
       </div>
-      <button class="settings">⚙️</button>
-    </header>
-
-    <main class="grid" id="gameGrid">
-    </main>
-
-    <div class="bottom-bar">
-      <button class="team-btn">👑 Team Splash</button>
-      <button class="share-btn">➜</button>
     </div>
-  </div>
 
-  <div class="overlay hidden" id="overlay">
-    <iframe id="gameFrame" src="" allowfullscreen></iframe>
-    <button class="close-btn" onclick="closeGame()">✕</button>
-  </div>
+    <button class="settings">⚙️</button>
+  </header>
 
-  <script src="app.js"></script>
+  <section class="games" id="games"></section>
+
+</div>
+
+<div class="dock">
+  <button class="dock-main">👑 Team Splash</button>
+  <button class="dock-share">➜</button>
+</div>
+
+<div class="overlay hidden" id="overlay">
+  <iframe id="frame" allowfullscreen></iframe>
+  <button class="close" onclick="closeGame()">✕</button>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
