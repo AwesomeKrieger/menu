@@ -2,44 +2,37 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Jos Spiele</title>
-  <meta name="theme-color" content="#111111">
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Jos Spiele</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#101010">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="app">
 
-  <header class="hero">
-    <div>
-      <p class="subtitle">Mobile Party Games</p>
-      <h1>Jos Spiele</h1>
+<header class="hero">
+<div>
+<p class="small">Mobile Party Games</p>
+<h1>Jos Spiele</h1>
 
-      <div class="chips">
-        <button>👥 Multiplayer</button>
-        <button>🔥 Beliebt</button>
-        <button>🎮 Party</button>
-      </div>
-    </div>
-
-    <button class="settings">⚙️</button>
-  </header>
-
-  <section class="games" id="games"></section>
-
+<div class="chips">
+<button>👥 Multiplayer</button>
+<button>🔥 Beliebt</button>
+<button>🎮 Party</button>
 </div>
+</div>
+</header>
 
-<div class="dock">
-  <button class="dock-main">👑 Team Splash</button>
-  <button class="dock-share">➜</button>
+<div class="grid" id="grid"></div>
+
 </div>
 
 <div class="overlay hidden" id="overlay">
-  <iframe id="frame" allowfullscreen></iframe>
-  <button class="close" onclick="closeGame()">✕</button>
+<button class="back" onclick="closeGame()">‹</button>
+<iframe id="frame" allowfullscreen></iframe>
 </div>
 
 <script src="app.js"></script>

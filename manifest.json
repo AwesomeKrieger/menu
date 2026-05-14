@@ -1,11 +1,9 @@
 
 {
-  "name":"Jos Spiele",
-  "short_name":"JosGames",
-  "display":"fullscreen",
-  "background_color":"#0f0f10",
-  "theme_color":"#0f0f10",
-  "orientation":"portrait",
-  "start_url":"./",
-  "icons":[]
+"name":"Jos Spiele",
+"short_name":"JosGames",
+"display":"fullscreen",
+"background_color":"#101010",
+"theme_color":"#101010",
+"start_url":"./"
 }
