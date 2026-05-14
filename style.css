@@ -122,18 +122,22 @@ height:100%;
 border:none;
 }
 
-.back{
-position:absolute;
-top:12px;
-left:12px;
-z-index:10;
-border:none;
-background:none;
-color:black;
-font-size:48px;
-font-weight:300;
-line-height:1;
+.back {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  border: none;
+  background: none;
+  /* Farbe auf Weiß setzen für den Invertierungs-Effekt */
+  color: white; 
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1;
+  /* Dieser Befehl sorgt für den automatischen Kontrast */
+  mix-blend-mode: difference;
 }
+
 
 .testMenu{
 padding:20px;
